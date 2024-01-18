@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .green-box {
+        width: 300px;
+        background-color: green;
+        /* background-color : 부모 색상이 상속이 되는게 아니고 원래 투명이라
+        aqua가 되는 것 */
+        position: relative;
+        top: 50px;
+        left: 100px;
+      }
+
+      .outer-box {
+        position: relative;
+        background-color: aqua;
+        width: 800px;
+        height: 800px;
+      }
+      p {
+        margin: 3px;
+        background-color: yellow;
+        width: 300px;
+        display: inline-block;
+      }
+      span {
+        margin: 3px;
+        background-color: yellow;
+        width: 30px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <p>이것은 p태그 입니다.</p>
+      <p>이거슨 p태그</p>
+      <p>이거슨 p태그</p>
+      <p>css 시러</p>
+      <p>css 시러</p>
+      <p>css 시러</p>
+      <p>혼란해ㅠㅠ</p>
+      <p>혼란해ㅠㅠ</p>
+      <span>이거슨 span 태그입니다</span>
+      <div class="green-box">이것은 초록색 박스입니다.</div>
+    </div>
+  </body>
+</html>
